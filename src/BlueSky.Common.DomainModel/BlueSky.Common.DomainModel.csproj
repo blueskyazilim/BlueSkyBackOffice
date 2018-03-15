@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7FF8C66D-ACD9-44A5-BE2D-CC79A1F4F978}</ProjectGuid>
+    <ProjectGuid>{7521AE25-A897-4ABE-BC2C-473D3C5CC847}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlueSky.Core</RootNamespace>
-    <AssemblyName>BlueSky.Core</AssemblyName>
+    <RootNamespace>BlueSky.Common.DomainModel</RootNamespace>
+    <AssemblyName>BlueSky.Common.DomainModel</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,21 +46,25 @@
     <Compile Include="..\GlobalVersionAssemblyInfo.cs">
       <Link>Properties\GlobalVersionAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="BlueSkyException.cs" />
-    <Compile Include="Caching\CacheEntry.cs" />
-    <Compile Include="Caching\CacheSingleton.cs" />
-    <Compile Include="Caching\CachingException.cs" />
-    <Compile Include="Caching\ICacheProvider.cs" />
-    <Compile Include="Cryptography\SymmetricEncryptionHelper.cs" />
-    <Compile Include="Helpers\HelperFactorySingleton.cs" />
-    <Compile Include="Helpers\HelperFactorySingletonException.cs" />
-    <Compile Include="Helpers\IHelper.cs" />
+    <Compile Include="EventFactorySingleton.cs" />
+    <Compile Include="EventFactorySingletonException.cs" />
+    <Compile Include="ICrudRepository.cs" />
+    <Compile Include="ICruRepository.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="IEvent.cs" />
+    <Compile Include="IFactory.cs" />
+    <Compile Include="IReadOnlyRepository.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="IUpdatableRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reflection\AssemblyHarvester.cs" />
-    <Compile Include="Reflection\ClassHarvester.cs" />
-    <Compile Include="Reflection\ClassHarvesterException.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BlueSky.Core\BlueSky.Core.csproj">
+      <Project>{7ff8c66d-acd9-44a5-be2d-cc79a1f4f978}</Project>
+      <Name>BlueSky.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
