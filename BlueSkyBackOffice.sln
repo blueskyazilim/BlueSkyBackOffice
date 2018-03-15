@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueSky.Common.Mappings", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueSky.Core.Test", "src\BlueSky.Core.Test\BlueSky.Core.Test.csproj", "{061E1664-4681-4CCE-95B3-ADC87650ED94}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "E-Commerce", "E-Commerce", "{8454E0A3-E7E5-4098-9FAD-7EF02785BA44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueSky.Commerce.DomainModel", "src\BlueSky.Commerce.DomainModel\BlueSky.Commerce.DomainModel.csproj", "{3F0A27D4-F8DC-4826-B800-229EBE717496}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{061E1664-4681-4CCE-95B3-ADC87650ED94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{061E1664-4681-4CCE-95B3-ADC87650ED94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{061E1664-4681-4CCE-95B3-ADC87650ED94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F0A27D4-F8DC-4826-B800-229EBE717496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0A27D4-F8DC-4826-B800-229EBE717496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0A27D4-F8DC-4826-B800-229EBE717496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0A27D4-F8DC-4826-B800-229EBE717496}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +80,6 @@ Global
 		{5E013ADC-9CC8-4715-AFEA-457DEE83F703} = {5130D7EC-8C6D-488B-BD56-01D41475D135}
 		{1F4A57DC-8CB1-4AC3-B7F4-FDFBA6110F3D} = {5130D7EC-8C6D-488B-BD56-01D41475D135}
 		{061E1664-4681-4CCE-95B3-ADC87650ED94} = {0621BA81-9A50-4AF7-8B80-74CEF181A334}
+		{3F0A27D4-F8DC-4826-B800-229EBE717496} = {8454E0A3-E7E5-4098-9FAD-7EF02785BA44}
 	EndGlobalSection
 EndGlobal
