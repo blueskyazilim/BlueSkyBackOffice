@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using BlueSky.Core.Attributes;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -15,3 +16,5 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("7521ae25-a897-4abe-bc2c-473d3c5cc847")]
+
+[assembly: DomainModelAssembly]

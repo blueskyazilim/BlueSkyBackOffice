@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\GlobalVersionAssemblyInfo.cs">
+      <Link>Properties\GlobalVersionAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Category.cs" />
     <Compile Include="CategoryFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

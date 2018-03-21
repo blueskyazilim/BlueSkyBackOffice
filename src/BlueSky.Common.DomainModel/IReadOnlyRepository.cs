@@ -1,5 +1,9 @@
 ﻿namespace BlueSky.Common.DomainModel
 {
+
+    using System;
+    using System.Linq.Expressions;
+
     /// <summary>
     /// Base repository interface for a read-only repository.
     /// </summary>
@@ -17,5 +21,7 @@
         /// Gets the entity instance with the specified id from the repository.
         /// </summary>
         TEntity GetById(TId id);
+
+        TEntity SingleOrDefault(Expression<Func<TEntity, bool>> filterExpression);
     }
 }

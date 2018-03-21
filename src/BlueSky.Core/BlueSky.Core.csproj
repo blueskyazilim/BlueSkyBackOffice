@@ -46,6 +46,9 @@
     <Compile Include="..\GlobalVersionAssemblyInfo.cs">
       <Link>Properties\GlobalVersionAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Attributes\DomainModelAssemblyAttribute.cs" />
+    <Compile Include="Attributes\PersistenceAssemblyAttribute.cs" />
+    <Compile Include="BlueSkyBugException.cs" />
     <Compile Include="BlueSkyException.cs" />
     <Compile Include="Caching\CacheEntry.cs" />
     <Compile Include="Caching\CacheSingleton.cs" />

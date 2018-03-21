@@ -11,6 +11,12 @@
             string name,
             string description)
         {
+
+            if (string.IsNullOrEmpty(code))
+            {
+                code = new EntityCodeGenerateService().GenerateCodeFor<Category>();
+            }
+
             var category = new Category(code, name, description);
 
             using (var ts = new TransactionScope())

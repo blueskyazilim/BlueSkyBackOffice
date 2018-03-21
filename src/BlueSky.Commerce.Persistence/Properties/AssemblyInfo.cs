@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BlueSky.Common.Persistence")]
+[assembly: AssemblyTitle("BlueSky.Commerce.Persistence")]
 [assembly: AssemblyDescription("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -15,6 +15,6 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5644afd3-1b5c-4571-92e7-1a4d51f69cc8")]
+[assembly: Guid("46cb5ffe-eb8d-4910-a7ac-30e6a2eeee83")]
 
-[assembly:PersistenceAssembly]
+[assembly: PersistenceAssembly]
