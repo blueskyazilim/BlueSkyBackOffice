@@ -49,6 +49,8 @@
     </Compile>
     <Compile Include="Category.cs" />
     <Compile Include="CategoryFactory.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
