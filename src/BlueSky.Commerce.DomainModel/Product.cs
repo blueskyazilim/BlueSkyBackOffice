@@ -5,6 +5,13 @@
     using System;
     using System.Collections.Generic;
 
+    public interface IProductRepository : 
+        ICruRepository<Product,int>, 
+        INavigatableRepository<Product, int>
+    {
+
+    }
+
     public class Product : CodedRevisionTrackableEntityBase
     {
         protected Product() { }
@@ -15,7 +22,7 @@
             string description) :
             base(code, name, description)
         {
-
+            this.productCategories = new List<ProductCategory>();
         }
         
         public virtual IEnumerable<ProductCategory> ProductCategories

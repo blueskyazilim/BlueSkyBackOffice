@@ -26,5 +26,20 @@
         {
             throw new NotImplementedException();
         }
+
+        public virtual void Delete(TEntity entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual TEntity GetNextItem(TId id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual TEntity GetPreviousItem(TId id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

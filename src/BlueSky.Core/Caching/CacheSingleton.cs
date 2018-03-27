@@ -1,6 +1,8 @@
 ﻿namespace BlueSky.Core.Caching
 {
+    using Reflection;
     using System;
+    using System.Linq;
 
     public class Cache
     {
@@ -30,7 +32,14 @@
 
         private CacheSingleton()
         {
+            var cacheProviderTypes = ClassHarvester.GetConcreteSubclassesOf<ICacheProvider>();
 
+            if (cacheProviderTypes.Count() != 1)
+            {
+                throw new CachingException("Exactly one cache provider must exist.");
+            }
+
+            this.cacheProvider = (ICacheProvider)Activator.CreateInstance(cacheProviderTypes.ElementAt(0));
         }
 
         public object Get(string key, int cacheVersion)

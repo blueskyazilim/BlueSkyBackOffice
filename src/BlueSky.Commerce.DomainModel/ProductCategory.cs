@@ -4,6 +4,12 @@
     using Core.DesignByContract;
     using System;
 
+    public interface IProductCategoryRepository :
+        ICrudRepository<ProductCategory, int>
+    {
+
+    }
+
     public class ProductCategory : VersionedEntityBase<int>
     {
         protected ProductCategory() { }
